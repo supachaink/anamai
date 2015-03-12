@@ -21,4 +21,10 @@ Html::a('ลิงค์แบบที่ 3', ['test/test1','a'=>'1']);
 ?>
 </div>
 
+<?php
+// testing connetion database ทดสอบที่สร้างขึ้น
+yii::$app->db->open();
+
+?>
+
 
