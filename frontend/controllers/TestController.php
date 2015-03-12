@@ -9,25 +9,24 @@ class TestController extends \yii\web\Controller {
     }
 
     public function actionTest1() {
-        // echo 'ทดสอบ 1';
+
         $a = 3;
         $b = 5;
         $sum = $a + $b;
+        
+        $param = ['sum' => $sum,'a'=>$a,'bb'=>$b];
 
-        $param=['sum' => $sum,'a'=>$a,'b'=>$b];
-        
-        return $this->render('Test1', $param);
-        
-        // return $this->render('Test1', ['sum' => $sum]);
-        // return $this->render('Test1',(array'sum'=>$sum)); 
-        
-        
-        
-    }// จบ test 1
+        return $this->render('test1',$param );
+    }// จบ test1
     
-    public function actionTest2($name=NULL,$lname=null) {
-        $info = "Your name is $name $lname";
-        return $this->render('Test2', ['info'=>$info]);
-    }
+    
+     public function actionTest2($name=null,$lname=null) {
+         
+         $info =  "Your name is $name $lname";
+         return $this->render('test2',['info'=>$info]);
+         
+     }
+    
+    
 
 }

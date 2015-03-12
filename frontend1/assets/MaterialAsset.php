@@ -15,7 +15,7 @@ use yii\web\AssetBundle;
  */
 class MaterialAsset extends AssetBundle
 {
-    public $sourcePath = '@themes/material';
+    public $basePath = '@themes/material';
     public $baseUrl = '@web';
     public $css = [
         'css/material-wfont.min.css',

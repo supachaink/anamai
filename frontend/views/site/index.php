@@ -1,28 +1,24 @@
 <?php
+use yii\helpers\Html;
 /* @var $this yii\web\View */
-$this->title = 'สำนักส่งเสริมสุขภาพ กรมอนามัย กระทรวงสาธารณสุข';
+$this->title = 'กรมอนามัย';
 ?>
+<div class="site-index well well-material">
 <?php
-$route1=Yii::$app->urlManager->createUrl('test/test1');
+$route1 = Yii::$app->urlManager->createUrl('test/test1');
 ?>
-<a href="<?=$route1?>"> ไปที่ Test1</a>;
+<a href="<?=$route1?>">ไปที่ test1</a>
 <br>
 
 <?php
-$route2=Yii::$app->urlManager->createUrl(['test/test2','name'=>'supachai','lname'=>'naknikorn']);
+$route2 = Yii::$app->urlManager->createUrl(['test/test2','name'=>'utehn','lname'=>'JAD']);
 ?>
-<a href="<?=$route2?>"> ไปที่ Test2</a>;
+<a href="<?=$route2?>">ไปที่ test2</a>
 <br>
 
-<?= 
-\yii\helpers\Html::a('Link แบบที่ 3',['test/test1','a'=>'1']);
+<?=
+Html::a('ลิงค์แบบที่ 3', ['test/test1','a'=>'1']);
 ?>
-<br>
+</div>
 
 
-<h1> Test Hello </h1>
-<h2> Test </h2>
-<h3> Test </h3>
-<h4> Test </h4>
-<h5> Test </h5>
-<h6> Test </h6>

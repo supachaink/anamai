@@ -14,7 +14,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+        Copyright 2012 Department of Health : Ministry of Public Health <br>
+        กรมอนามัย กระทรวงสาธารณสุข เลขที่ 88/22 ม.4 ต.ตลาดขวัญ ถ.ติวานนท์ อ.เมือง จ.นนทบุรี 11000 โทร 0-2590-4000 <br>
+        If you have business inquiries or other questions, please fill out the following form to contact us. Thank you. <br>
     </p>
 
     <div class="row">

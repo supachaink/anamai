@@ -1,7 +1,7 @@
 <?php
 namespace frontend\controllers;
 
-use Yii;
+use Yii;   /*  use คือการประกาศเรียกใช้ class ที่ต้องการ */
 use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
